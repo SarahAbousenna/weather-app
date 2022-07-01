@@ -2,7 +2,6 @@
   box-sizing: border-box;
 }
 body {
-  background-color: #d8d4e4;
   font-family: "Anek Malayalam", sans-serif;
   /* font-family: "Roboto Mono", monospace; */
 }
@@ -11,7 +10,7 @@ body {
   width: 1085px;
   margin: 0 auto;
   margin-top: 40px;
-  background-color: transparent;
+  /* background-color: transparent; */
 }
 
 .card-body {
@@ -145,6 +144,10 @@ input:focus {
   cursor: pointer;
 }
 
+/* :hover .github-link {
+
+} */
+
 .celsius,
 .celsius-feelslike {
   color: white;
@@ -157,12 +160,16 @@ input:focus {
   color: rgb(163, 146, 141);
 }
 
-:hover .fahrenheit,
+/* :hover .fahrenheit,
 :hover .celsius {
-  color: rgb(163, 146, 141);
-}
+  color: grey;
+} */
 
-.fahrenheit:focus,
+/* .fahrenheit:focus,
 .celsius:focus {
   color: white;
+} */
+
+#weather-description {
+  text-transform: capitalize;
 }
