@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 body {
-  background-color: #ede9f7;
+  background-color: #d8d4e4;
   font-family: "Anek Malayalam", sans-serif;
   /* font-family: "Roboto Mono", monospace; */
 }
@@ -138,6 +138,12 @@ input:focus {
   font-family: "Roboto Mono", monospace;
   text-align: center;
   margin-top: 10px;
+}
+
+.code-github-link {
+  color: rgb(54, 54, 82);
+  cursor: pointer;
+  /* font-weight: bold; */
 }
 
 .celsius,

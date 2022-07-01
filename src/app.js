@@ -84,7 +84,7 @@ function showTemperature(response) {
 // *** spliting the search and the city name so we can have a default city appear on load *** //
 // function searched city will receive a city --> will make an API call --> Display said city's temperature
 
-function searchedCity(cityName) {
+function searchCity(cityName) {
   let apiKey = "aae8baa2317f56f58a77ca41fca89dc2";
   let units = "metric";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}&units=${units}`;
@@ -96,7 +96,7 @@ function searchedCity(cityName) {
 function handleSubmit(event) {
   event.preventDefault();
   let cityName = document.querySelector("#searchbar").value;
-  searchedCity(cityName);
+  searchCity(cityName);
 }
 
 let newCity = document.querySelector("#search-form");
@@ -104,7 +104,7 @@ newCity.addEventListener("submit", handleSubmit);
 
 // searchedCity is doing the search on load and displaying the weather for NewYork which is the default city //
 
-searchedCity("New York");
+searchCity("New York");
 
 //*****---- Function - Display Current Location ----*****//
 //------------------------------------------------------//
