@@ -33,7 +33,7 @@ function dateTime(currDate) {
   let minutes = currDate.getMinutes();
   if (minutes < 10) minutes = "0" + minutes;
 
-  return `${day}, ${month} ${date} ${hours}:${minutes}`;
+  return `<i class="fa-solid fa-calendar-days"></i>  ${day}, ${month} ${date}  <i class="fas fa-clock"></i> ${hours}:${minutes}`;
 }
 
 let existingDate = document.querySelector("#curr-date");
@@ -76,6 +76,8 @@ function showTemperature(response) {
   );
   document.querySelector("#weather-description").innerHTML =
     response.data.weather[0].description;
+  document.querySelector("#currentcountry").innerHTML =
+    response.data.sys.country;
 }
 
 //*****---- Function - Display Searched City Name ---> Show Searched City Temperature ----*****//
@@ -104,7 +106,7 @@ newCity.addEventListener("submit", handleSubmit);
 
 // searchedCity is doing the search on load and displaying the weather for NewYork which is the default city //
 
-searchCity("New York");
+searchCity("Toronto");
 
 //*****---- Function - Display Current Location ----*****//
 //------------------------------------------------------//
@@ -130,3 +132,12 @@ function getCurrentPosition() {
 
 let button = document.querySelector("#current-location");
 button.addEventListener("click", getCurrentPosition);
+
+//*****---- Function - Display Weekly Temperature ----*****//
+//---------------------------------------------------------//
+
+// function showTemperature(response) {
+//   document.querySelector("#current-weather").innerHTML = Math.round(
+//     response.data.main.temp
+//   );
+// }
