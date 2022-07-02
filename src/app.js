@@ -78,6 +78,9 @@ function showTemperature(response) {
     response.data.weather[0].description;
   document.querySelector("#currentcountry").innerHTML =
     response.data.sys.country;
+
+  //   document.querySelector("#fri-hi").innerHTML = Math.round(
+  // response.data.main.temp.max
 }
 
 //*****---- Function - Display Searched City Name ---> Show Searched City Temperature ----*****//
@@ -135,9 +138,3 @@ button.addEventListener("click", getCurrentPosition);
 
 //*****---- Function - Display Weekly Temperature ----*****//
 //---------------------------------------------------------//
-
-// function showTemperature(response) {
-//   document.querySelector("#current-weather").innerHTML = Math.round(
-//     response.data.main.temp
-//   );
-// }

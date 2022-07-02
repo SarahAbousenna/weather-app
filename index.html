@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>The Weather Cloud App</title>
+    <title>☀️ The Weather Cloud App</title>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -44,11 +44,7 @@
 
           <div class="inner-conntainer">
             <div>
-              <img
-                class="logo"
-                src="/images/theWeatherCloudLogo.png"
-                alt="logo"
-              />
+              <img class="logo" src="/images/logo.png" alt="logo" />
             </div>
             <div class="row search-container">
               <form class="col searchform" id="search-form">
@@ -136,7 +132,10 @@
                 <div class="col emoji">
                   <i class="fa-solid fa-cloud-rain"></i>
                 </div>
-                <div class="col">28°<span class="low-temp"> 16°C</span></div>
+                <div class="col" id="fri-hi">
+                  28°<span class="low-temp" id="fri-lo"> 16</span
+                  ><span class="degree">°C</span>
+                </div>
               </div>
               <div class="col">
                 SAT

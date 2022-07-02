@@ -126,7 +126,8 @@ input:focus {
   font-size: 35px;
 }
 
-.low-temp {
+.low-temp,
+.degree {
   color: rgb(163, 146, 141);
 }
 
